@@ -1,0 +1,21 @@
+.hero {
+    z-index: -1;
+    min-height: 100vh;
+    background-image: url('../images/WB-HP-F3-prisoner-of-azkaban-sirius-and-harry-talk-hogwarts__hero.webp');
+    background-size: cover;
+    text-align: center;
+
+    &__content {
+        max-width: 820px;
+        margin: 0 auto;
+
+        h2, p {
+            padding: 0 30px;
+            margin-bottom: 10px;
+        }
+
+        &__branding {
+
+        }
+    }
+}
