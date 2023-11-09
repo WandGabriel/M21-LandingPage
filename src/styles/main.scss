@@ -1,4 +1,31 @@
 @use 'hero';
+@use 'variaveis';
+
+@font-face {
+    font-family: Sofia Pro;
+    src: url('../../assets/fonts/sofiapro-light.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: BluuNext;
+    src: url ('../../assets/fonts/BluuNext-Bold.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: BluuNext;
+    src: url('../../assets/fonts/BluuNext-Bolditalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: BluuNext;
+    src: url('../../assets/fonts/BluuNext-Titling.otf');
+    font-weight: bold;
+    
+}
 
 * {
     margin: 0;
@@ -6,23 +33,19 @@
     box-sizing: border-box;
 }
 
-$corDeFundo: #10141b;
-$corTextoPrincipal: #f9f4f2;
-$corTextoSecundario: #9fa1ad;
-
 body {
-    background-color: $corDeFundo;
+    background-color: variaveis.$corDeFundo;
 }
 
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: $corTextoPrincipal;
+    color: variaveis.$corTextoPrincipal;
 }
 
 @mixin title($fontSize:32px) {
     @include text($fontSize);
-    color: $corTextoPrincipal;
+    color: variaveis.$corTextoPrincipal;
 }
 
 .text--default {
@@ -37,9 +60,13 @@ body {
     @include text(14px);
 }
 
+.text--button {
+    @include text(12px);
+}
+
 .link-text {
     @include text(18px);
-    color: $corTextoPrincipal;
+    color: variaveis.$corTextoPrincipal;
 }
 
 .title--big {

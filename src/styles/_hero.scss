@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .hero {
     z-index: -1;
     min-height: 100vh;
@@ -14,8 +16,35 @@
             margin-bottom: 10px;
         }
 
-        &__branding {
+        p {
+            max-width: 520px;
+            margin: 0 auto;
+            font-family: Sofia Pro, 'serif';
+        }
 
+        h2 {
+            font-family: BluuNext;
+        }
+
+        .button {
+            padding: 14px 40px 18px;
+            background-color: #514a92;
+            color: variaveis.$corTextoPrincipal;
+            text-transform: uppercase;
+            border: none;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1;
+            letter-spacing: 1.5px;
+            width: 320px;
+            border-radius: 30px;
+            margin-top: 30px;
+            border: 1px solid #514a92;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: lighten(#514a92, 3%);
+            }
         }
     }
 }
