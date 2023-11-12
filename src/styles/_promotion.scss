@@ -1,0 +1,40 @@
+.promotion {
+
+    margin-top: 32px;
+    width: 90%;
+    margin: 0 auto;
+    
+    &__content {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            padding-bottom: 64px;
+        }
+
+        &__text-left {
+            width: 30%;
+            position: relative;
+            top: 0;
+            left: 200px;
+        }
+
+        &__text-right {
+            width: 40%;
+            position: relative;
+            top: 0;
+            right: 150px;
+        }
+    }
+
+    h1 {
+        font-family: BluuNext;
+        padding-bottom: 16px;
+    }
+
+    p {
+        font-family: Sofia Pro;
+    }
+}

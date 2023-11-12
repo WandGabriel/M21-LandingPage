@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'variaveis';
 @use 'information';
+@use 'promotion';
 
 @font-face {
     font-family: Sofia Pro;
@@ -43,6 +44,27 @@ body {
     background-color: #353643;
     width: 90%;
     margin: 0 auto;
+}
+
+.button {
+    padding: 14px 40px 18px;
+    background-color: #514a92;
+    color: variaveis.$corTextoPrincipal;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    width: 320px;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 1px solid #514a92;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: lighten(#514a92, 3%);
+    }
 }
 
 @mixin text($fontSize: 16px) {
