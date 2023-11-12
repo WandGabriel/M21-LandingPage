@@ -1,5 +1,6 @@
 @use 'hero';
 @use 'variaveis';
+@use 'information';
 
 @font-face {
     font-family: Sofia Pro;
@@ -35,6 +36,13 @@
 
 body {
     background-color: variaveis.$corDeFundo;
+}
+
+.underline__class {
+    height: 1px;
+    background-color: #353643;
+    width: 90%;
+    margin: 0 auto;
 }
 
 @mixin text($fontSize: 16px) {
