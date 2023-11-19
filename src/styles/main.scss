@@ -2,6 +2,7 @@
 @use 'variaveis';
 @use 'information';
 @use 'promotion';
+@use 'latest_news';
 
 @font-face {
     font-family: Sofia Pro;
@@ -33,6 +34,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Sofia Pro, 'serif';
 }
 
 body {

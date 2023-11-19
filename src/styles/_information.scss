@@ -1,5 +1,4 @@
 .information {
-    font-family: BluuNext;
     max-width: 90%;
     margin: 0 auto;
     align-items: center;
@@ -15,7 +14,11 @@
         &__item {
             img {
                 border-radius: 10px;
-            }           
+            }
+            
+            p {
+                font-family: BluuNext;
+            }
         }
     }
 }
