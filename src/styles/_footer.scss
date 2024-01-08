@@ -1,0 +1,33 @@
+@use 'variaveis';
+
+.footer {
+    max-width: 90%;
+    margin: 0 auto;
+    border: 1px solid variaveis.$corBorda;
+    padding: 50px 80px;
+
+    &__container {      
+        display: flex;  
+        margin: 0 auto;
+        justify-content: space-around;
+
+        &__list {
+            margin-right: 50px;
+            &__item {
+                list-style: none;
+                text-decoration: none;
+                color: variaveis.$corTextoPrincipal;
+                
+                a {
+                    text-decoration: none;
+                    color: variaveis.$corTextoPrincipal;
+                    font-weight: bolder;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
