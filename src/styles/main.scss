@@ -68,6 +68,10 @@ body {
     &:hover {
         background-color: lighten(#514a92, 3%);
     }
+
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
 }
 
 @mixin text($fontSize: 16px) {
@@ -104,6 +108,10 @@ body {
 
 .title--big {
     @include title(60px);
+
+    @media (max-width: 768px) {
+        @include title(40px);
+    }
 }
 
 .title--default {
